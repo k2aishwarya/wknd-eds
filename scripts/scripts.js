@@ -95,6 +95,13 @@ function buildHeroBlock(main) {
   }
 }
 
+function workbookLinks() {
+  const workbookLinks = document.querySelectorAll('body.workbook a');
+  workbookLinks.forEach((link) => {
+    link.target = '_blank';
+  });
+}
+
 /**
  * Builds all synthetic blocks in a container element.
  * @param {Element} main The container element
@@ -102,6 +109,7 @@ function buildHeroBlock(main) {
 function buildAutoBlocks(main) {
   try {
     buildHeroBlock(main);
+    workbookLinks();
   } catch (error) {
     // eslint-disable-next-line no-console
     console.error('Auto Blocking failed', error);
