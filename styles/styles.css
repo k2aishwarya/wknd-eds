@@ -136,6 +136,11 @@ a:any-link {
   text-decoration: none;
 }
 
+body.workbook main a {
+  color: blue;
+  text-decoration: underline blue;
+}
+
 a:hover {
   text-decoration: underline;
   color: var(--link-hover-color);
