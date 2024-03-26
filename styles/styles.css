@@ -136,7 +136,7 @@ a:any-link {
   text-decoration: none;
 }
 
-body.workbook a {
+body.workbook main a {
   color: blue;
   text-decoration: underline blue;
 }
